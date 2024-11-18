@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>const-javascript</title>
+</head>
+<body>
+    <h1>Data type</h1>
+    <script>
+        var number = 29;
+        var b = 3.5;
+        //dữ liệu chuỗi
+        var fullName = "thân văn dũng"
+        //dữ liệu boolean
+        let flag = true;
+        function doTuoi(a){
+            if( a > 50){
+                document.write('đến tuổi nghỉ hưu')
+            }
+            else{
+                document.write('chưa đến tuổi nghỉ hưu')
+            }
+            document.write('<br>')
+        }
+        let old = 60;
+        doTuoi(old);
+        // dữ liệu undefined
+        let n;//ko gán
+        console.log(n)
+        let m = null
+        //dữ liệu mảng
+        let my_array = ['dũng','chinh','hoàng']
+        document.write(my_array)
+
+        // object
+        let person = {
+            // key : vvalue
+            'fullname' : 'thân văn dũng',
+            'age' : 11,
+            'gender' : 'male'
+        };
+        console.log(person)
+    </script>
+</body>
+</html>
