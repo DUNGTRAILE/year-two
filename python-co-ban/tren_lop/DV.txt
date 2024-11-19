@@ -1,0 +1,9 @@
+TIN,Khoa Công nghệ thông tin
+DLY,Khoa Địa lý - Địa chất
+BAO,Khoa Báo chí - Truyền thông
+KTR,Khoa Kiến trúc
+SIN,Khoa Sinh học
+DTV,Khoa Điện-Điện tử và Công nghệ vật liệu
+XHH,Khoa Xã hội học và Công tác xã hội
+LIS,Khoa Lịch sử
+MTK,Khoa Môi trường
