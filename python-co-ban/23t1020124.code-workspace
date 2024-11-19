@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../24t1020571_nguyenquocanh/buoi4"
+		},
+		{
+			"path": "../Buoi4"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Buoi4"
+	}
+}

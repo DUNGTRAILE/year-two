@@ -1,0 +1,15 @@
+TIN3163,An ninh mạng,3,12/08/2021 20:10,TIN01
+TRD4133,An toàn lao động trong trắc địa,3,20/05/2022 22:58,DLY01
+TIN4293,An toàn mạng,3,04/08/2021 06:42,TIN01
+TRD5033,Anh văn chuyên ngành,3,01/02/2023 10:14,DLY02
+DLY4183,Bản đồ chuyên đề,3,,DLY03
+TRD4093,Bản đồ chuyên môn,3,20/05/2022 23:00,DLY03
+DLY3073,Bản đồ đại cương,3,20/05/2022 23:01,DLY04
+TRD4213,Bản đồ địa chất công trình,3,01/02/2023 10:15,DLY05
+DLY4023,Bản đồ hiện trạng sử dụng đất,3,19/08/2023 08:29,DLY07
+TRD3063,Bản đồ số và độ chính xác bản đồ,3,,DLY04
+QTM5043,Bản đồ tài nguyên và môi trường,3,30/07/2021 09:15,DLY04
+BAO2052,Báo chí và dư luận xã hội,2,09/08/2021 15:07,BAO01
+BAO2032,Báo chí và thông tin quốc tế,2,09/08/2021 15:07,BAO02
+BAO4392,Báo in,2,09/08/2021 15:08,BAO02
+TIN4513,Bảo mật thông tin,3,30/07/2021 09:32,TIN03
