@@ -1,0 +1,11 @@
+
+ds.push_back(new ThiSinh_KhoiTN("TS01", "Nguyen Van A", "Ha Noi", 0.5, 8, 7, 9));
+ds.push_back(new ThiSinh_KhoiXH("TS02", "Tran Thi B", "Ho Chi Minh", 0.5, 9, 8, 7));
+ds.push_back(new ThiSinh_KhoiTN("TS03", "Le Van C", "Da Nang", 0.5, 7, 9, 8));
+ds.push_back(new ThiSinh_KhoiXH("TS04", "Nguyen Thi D", "Ha Noi", 0.5, 8, 7, 9));
+ds.push_back(new ThiSinh_KhoiTN("TS05", "Tran Van E", "Ho Chi Minh", 0.5, 9, 8, 7));
+ds.push_back(new ThiSinh_KhoiXH("TS06", "Le Thi F", "Da Nang", 0.5, 7, 9, 8));
+ds.push_back(new ThiSinh_KhoiTN("TS07", "Nguyen Van G", "Ha Noi", 0.5, 8, 7, 9));
+ds.push_back(new ThiSinh_KhoiXH("TS08", "Tran Thi H", "Ho Chi Minh", 0.5, 9, 8, 7));
+ds.push_back(new ThiSinh_KhoiTN("TS09", "Le Van I", "Da Nang", 0.5, 7, 9, 8));
+ds.push_back(new ThiSinh_KhoiXH("TS10", "Nguyen Thi J", "Ha Noi", 0.5, 8, 7, 9));
