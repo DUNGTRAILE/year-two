@@ -1,0 +1,20 @@
+li{
+    list-style: none;
+}
+.display-flex{
+    display: flex;
+}
+a:hover{
+    text-decoration: none;
+}
+.margin-auto{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}

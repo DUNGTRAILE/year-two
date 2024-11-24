@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .box-parent{
+            width: 70%;
+            margin: 0px auto;
+            background-color: rgb(56, 34, 6);
+        }
+        .box-left , .box-right{
+            float: left;
+            min-height: 600px;
+        }
+        .box-left{
+            /* background-color: aquamarine; */
+            width: 600px;
+        }
+        .box-right{
+            /* background-color: blue; */
+            width: 360px;
+        }
+        .clearfix:after{
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0px;
+            height: 0px;
+        }
+        .clearfix{
+            clear: both;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>class clearfix</h1>
+    <div class="box-parent">
+        <div class="box-left">LEFT</div>
+        <div class="box-right">RIGHT</div>
+        <div class="clearfix"></div>
+    </div>
+
+</body>
+</html>

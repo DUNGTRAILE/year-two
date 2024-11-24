@@ -1,0 +1,36 @@
+#wrapper{
+    width: 75rem;
+    margin: 0px auto;
+}
+/* ====phần đầu===== */
+h1{
+    background: rgb(141, 5, 5);
+}
+/* ========phần thân=========== */
+h2:before{
+   content:"★";
+   color :rgb(141, 5, 5);
+}
+h2:not(.active){
+    color: orange;
+}
+h2.active{
+    color: rgb(0, 123, 172);
+}
+a{
+    font-weight: bolder;
+    color: brown;
+}
+input:checked+label{
+    color:brown;
+}
+/* =====hover===== */
+h1:hover{
+    background: yellowgreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+a:hover{
+    color: rgb(8, 145, 42);
+}
+

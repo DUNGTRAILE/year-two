@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHẬP DỮ LIỆU</title>
+</head>
+<body>
+    <h1>nhập dữ liệu</h1>
+    <!-- nhâp text -->
+    <from action="">
+        <!-- thẻ text -->
+        <label for="username"><b>Tên Đăng Nhập:</b></label> <br>
+        <input id="username" type="text" name="username" placeholder="tên đăng nhập" value="" >  <br>
+        <!-- thẻ password -->
+        <label for="password"><b>Password:</b></label> <br>
+        <input id="password" type="password" name="" placeholder="mật khẩu"> <br>
+        <!-- id và for phải giống nhau mới đc AUTO-FOCUS -->
+        <!-- thẻ nhập dữ liệu gamil -->
+        <label for="email"><b>Email:</b></label> <br>
+        <input id="email" type="email" name="email" placeholder="nhập email"><br>
+        <!-- thẻ number -->
+        <label for="number"><b>Số Lượng:</b></label><br>
+        <input id="number" type="number" name="number" placeholder="nhập số lượng" min="1" max="20"><br>
+        <!-- nhap ngày tháng -->
+        <label for="birth"><b>ngày sinh:</b></label> <br>
+        <input id="birth" type="date" name="birth" placeholdre="ngày sinh"><br>
+        <!-- from lựa chọn -->
+        <label for="city"><b>Chọn thành phố:</b> </label><br>
+        <select name="city" id="city">
+            <option value="0">Chọn thành phố</option>
+            <option value="1">Hà Tĩnh</option>
+            <option value="2">Nghệ An</option>
+            <option value="3">Quãng Bình</option>
+            <option value="4">Quãng trị</option>
+            <option value="5">Huế</option>
+        </select><br>
+        <!-- form nhập dữ liệu radio -->
+        <label for=""><b>Chọn giới tính:</b></label>
+        <label for="male">Nam</label>
+        <input id="male" type="radio" name="gender" value="male">
+        <label for="female">Nữ</label>
+        <input id="female" type="radio" name="gender" value="female"><br><br>
+        <!-- from checbox -->
+        <label for=""><b>Chọn sở thích</b></label><br>
+        <input id="book" type="checkbox" name="hobby" value="book">
+        <label for="book">Đọc Sách</label><br>
+        <input id="game" type="checkbox" name="hobby" value="game">
+        <label for="game">Chơi Game</label><br>
+        <input id="shopping" type="checkbox" name="hobby" value="shopping">
+        <label for="shopping">Mua sắm</label><br>
+        <input id="football" type="checkbox" name="hobby" value="football">
+        <label for="football">Đá Bóng</label><br>
+        <!-- doạn văn bản -->
+        <label for="post-content"><b>nhập phản hồi của bạn</b></label>
+        <textarea id="post-content" name="post_content" id="" cols="50" rows="10"></textarea><br><br>
+        <!-- from dữ liệu ngầm -->
+        <input type="hidden" name="redirect-to" value="https://www.youtube.com/">
+        <!-- from submit -->
+        <input type="submit" value="Đăng Nhập">
+    
+    </from>
+</body>
+</html>

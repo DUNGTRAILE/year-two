@@ -1,0 +1,13 @@
+:root {
+    --mau_chu_daocolor : rgb(255, 0, 0) ; 
+}
+.noidungmot > .vanban {
+   color : var(--mau_chu_daocolor);
+    font-style : oblique ;
+}
+h1{
+    color : var(--mau_chu_daocolor);
+}
+h3{
+    color : var(--mau_chu_daocolor);
+}

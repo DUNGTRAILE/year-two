@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before after</title>
+    <style>
+        h1:before{
+                content: "✪ " ;
+                color: brown;
+        }
+        h1:after{
+                content: "✪" ;
+                color: brown;
+        }
+        .list-post a.new:after{
+            content: url("https://research.mgu.ac.in/wp-content/uploads/2021/07/new-icon-gif-9.gif");
+            
+        }
+    </style>
+</head>
+<body>
+        <h1>before after </h1>
+        
+        <ul class="list-post">
+            <li><a href="" class="new">Bài viết số 1</a></li>
+            <li><a href="" class="new">Bài viết số 2</a></li>
+            <li><a href="" >Bài viết số 3</a></li>
+            <li><a href="" class="new">Bài viết số 4</a></li>
+            <li><a href="" class="new">Bài viết số 5</a></li>
+        </ul>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Cá Nhân của Quân</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005bb5;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #003f7f;
+        }
+        section {
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #0073e6;
+        }
+        .form-container {
+            background-color: #e6f2ff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Quân's Personal Website</h1>
+    </header>
+    <nav>
+        <a href="#about">Giới thiệu</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Liên hệ</a>
+        <a href="#login">Đăng nhập</a>
+        <a href="#register">Đăng ký</a>
+    </nav>
+    <section id="about" class="container">
+        <h2>Giới thiệu</h2>
+        <p>Xin chào, mình là Quân. Mình có sở thích đá bóng và rất yêu thích thể thao. Đây là trang web cá nhân của mình nơi mình chia sẻ những thông tin, bài viết và sở thích cá nhân.</p>
+    </section>
+    <section id="blog" class="container">
+        <h2>Blog</h2>
+        <p>Đây là nơi mình chia sẻ những bài viết và kinh nghiệm về các chủ đề mình yêu thích.</p>
+        <!-- Các bài viết blog sẽ được thêm vào đây -->
+    </section>
+    <section id="contact" class="container">
+        <h2>Liên hệ</h2>
+        <div class="form-container">
+            <form>
+                <label for="name">Tên:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Lời nhắn:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Gửi</button>
+            </form>
+        </div>
+    </section>
+    <section id="login" class="container">
+        <h2>Đăng nhập</h2>
+        <div class="form-container">
+            <form>
+                <label for="username">Tên đăng nhập:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Đăng nhập</button>
+            </form>
+        </div>
+    </section>
+    <section id="register" class="container">
+        <h2>Đăng ký</h2>
+        <div class="form-container">
+            <form>
+                <label for="new-username">Tên đăng nhập:</label>
+                <input type="text" id="new-username" name="new-username" required>
+                <label for="new-email">Email:</label>
+                <input type="email" id="new-email" name="new-email" required>
+                <label for="new-password">Mật khẩu:</label>
+                <input type="password" id="new-password" name="new-password" required>
+                <button type="submit">Đăng ký</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
