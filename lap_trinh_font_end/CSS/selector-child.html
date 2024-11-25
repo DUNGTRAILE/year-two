@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child-selector</title>
+    <style>
+            /* ul.menu li:first-child{
+                 font-weight: bold;
+                 color: brown;
+            }
+            ul li:last-child{
+                 font-weight: bold;
+                 color: rgba(3, 206, 64, 0.253);
+            } */
+            ul li:nth-child(2n+1){
+                font-weight: bold;
+                color :  brown;
+            }
+    </style>
+</head>
+<body>
+        <h1>child selector</h1>
+
+        <ul class="menu">
+            <li>bài 1</li>
+            <li>bài 2
+                <ul>
+                    <li>bai 2.1</li>
+                    <li>bai 2.2</li>
+                    <li>bai 2.3</li>
+                    <li>bai 2.4</li>
+                </ul>
+            </li>
+            <li>bài 3</li>
+            <li>bài 4</li>
+            <li>bài 5</li>
+            <li>bài 6</li>
+            <li>bài 7</li>
+            <li>bài 8</li>
+        </ul>
+</body>
+</html>

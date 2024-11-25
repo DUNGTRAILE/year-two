@@ -1,0 +1,341 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.display-flex{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+.centered{
+    margin: 0px auto;
+    width: 1390px;
+}
+/* ========= header ============ */
+#header{
+    min-height: 772px;
+}
+.top-head{
+    height: 60px;
+    background-color: rgb(3, 76, 49);
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-size: 20px;
+}
+.top-head p::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f073 ";
+}
+.mid-header{
+    height: 87px;
+    align-items: center;
+}
+.producer-mn-head a{
+    color: black;
+}
+.logo-head{
+    width: 87px;
+    height: 100%;
+}
+.menu-header{
+    width: 805px;
+    /* padding-top: 50px ; */
+}
+.knot-head{
+    /* padding-top: 22px; */
+    width: 433px;
+}
+.pr-knot{
+    position: relative;
+    color: white;
+    width: 138px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+.register::before{
+    font-family:"Font Awesome 5 Free";
+    content:"\f508 ";
+    position:absolute;
+    left: 20px;
+    top: 13px;
+}
+.actic::before{
+    font-family:"Font Awesome 5 Free";
+    /* content: "\f073 "; */
+    content:"\f073 ";
+    position:absolute;
+    left: 20px;
+    top: 13px;
+}
+
+.login::before{
+    font-family:"Font Awesome 5 Free";
+    content:"\f234 ";
+    position:absolute;
+    left: 20px;
+    top: 13px;
+}
+/* ========botton header========== */
+.bottom-header{
+    width: 100%;
+    height: 625px;
+    background: #e1d4b4;
+    background-image: none;
+    background-size: auto;
+    background-size: 40px 40px;
+    background-image: linear-gradient(90deg,hsla(0,0%,100%,.2) 1.3px,transparent 0),linear-gradient(180deg,hsla(0,0%,100%,.2) 1.3px,transparent 0);
+}
+.content-bottom-header{
+    height: 100%;
+}
+.info-bottom-header{
+    width: 400px;
+    padding-top: 110px;
+}
+.img-bottom-head{
+    width: 570px;
+    align-items: center;
+    height: 100%;
+}
+.all-from-head{
+    width: 400px;
+    height: 100%;
+    align-items: center;
+}
+.teacher-header , .conquer span{
+    color:rgb(237, 32, 0) ;
+}
+.teacher-header{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.course{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.conquer{
+    line-height: 70px;
+    font-size: 50px;
+    font-weight:bolder;
+}
+.button-content-head{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(3, 76, 49);
+    color: white;
+    font-size: 20px ;
+    position: relative;
+    bottom: -120px;
+}
+/* ==========from ============ */
+.from-header{
+    flex-wrap: wrap;
+    height: 550px;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    position: relative;
+}
+.from-header h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.from-header input{
+    height: 50px;
+    width:354px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 10px ;
+    /* margin-bottom: 18px; */
+    padding-left: 10px;
+}
+.button-from-head{
+    height: 50px;
+    width:354px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 10px ;
+    background-color: rgb(245, 103, 81);
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+/* ========content========= */
+.top-content{
+    padding: 0px 230px;
+    height: 80px;
+}
+.pr-top-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.pr-top-content p{
+    color: black;
+    font-weight: bolder;
+}
+.img-content{
+    height: 75px;
+    width: 100%;
+}
+.menu-content-1{
+    padding-top: 15px;
+    line-height: 40px;
+    flex-wrap: wrap;
+}
+.title-mn-content-1{
+    flex-basis: 100%;
+    color: rgb(3, 76, 49);
+    font-size: 30px;
+}
+.slogan{
+    font-size: 20px;
+}
+.title-mn-content-1 span{
+    color: rgb(245, 103, 81);
+}
+.button-menu-content-1{
+    margin-left: 215px;
+    width: 720px;
+}
+.button-menu-content-1 a{
+    text-align: center;
+    padding-bottom: 40px;
+    color: black;
+    height: 35px;
+    width: 130px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 7px;
+}
+.see-more-1{
+    color:rgb(245, 103, 81) ;
+}
+/* =========== MENU =========== */
+.menu-hoa-or-toan{
+    margin-top: 20px;
+    width: 100%;
+}
+.pr-menu-hoa-or-toan{
+    overflow: hidden;
+    width: 330px;
+    height: 382px ;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0,.2);
+    border-radius: 9px;
+}
+.img-pr-menu-hoa-or-toan{
+    height: 200px;
+}
+.img-pr-menu-hoa-or-toan img{
+
+}
+.content-menu{
+    padding: 15px;
+    position: relative;
+    height: 182px;
+}
+.info-menu-hoa-or-toan{
+    font-size: 20px;
+    font-weight: bolder;
+    height: 80px;
+}
+.teacher-hoa-or-toan{
+    color:rgb(64, 130, 255) ;
+}
+.price-menu-hoa-or-toan{
+    color: rgb(245, 103, 81);
+    margin-top: 30px;
+}
+.price-menu-hoa-or-toan i ,.teacher-hoa-or-toan i{
+    margin-right: 10px;
+    color:black ;
+}
+.button-menu-hoa-or-toan{
+    width: 150px;
+    height:35px ;
+    color: white;
+    background-color: rgb(64, 130, 255);
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding-bottom: 3px;
+    border: none;
+    border-radius: 6px;
+}
+.button-menu-hoa-or-toan i{
+    position: relative;
+    bottom: -3px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.menu-toan{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+/* ============== VIDEO =========== */
+.video-content{
+    margin-bottom: 50px;
+}
+.menu-video{
+    background-color: rgb(96, 161, 213);
+    width: 465px;
+    justify-content: center;
+    padding-top: 20px;
+}
+.producter-menu-video{
+    padding: 15px;
+    height: 90px;
+    display: flex;
+    gap: 10px;
+    color: white;
+}
+.img-menu-video{
+    height: 65px;
+    width: 100px;
+}
+iframe{
+    width:925px ;
+    height: 520px;
+}
+.info-video h3 span{
+    color: rgb(102, 236, 131);
+}
+
+.img-bottom-content{
+    height: 510px;
+    background: url("../images/Tôi\ Yêu\ Hóa\ Học-311ea749-b47c-482e-bcd2-8aa4674289ea.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+/* ============ FOOTER ========= */
+.footer{
+    background-color: rgb(3, 76, 49);
+    padding-top: 20px;
+}
+.logo-footer{
+    height: 157px;
+   margin-bottom: 30px;
+}
+.logo-footer img{
+   width: 157px;
+}
+.content-footer{
+    color: white;
+}

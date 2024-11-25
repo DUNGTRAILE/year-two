@@ -1,0 +1,100 @@
+<<<<<<< HEAD
+.display-flex{
+    display: flex;
+}
+:root{
+    --color-product-head: rgb(255, 255, 255);
+    --color-span-date-time-top:rgb(142, 142, 142);
+    --color-date-time-top: rgb(215, 215, 215);
+    --color-yellow:rgb(255, 204, 0);
+    --color-title-trip:rgb(51, 51, 51);
+    --color-title:rgb(50, 60, 63);
+    --color-span-date-time-white:rgb(137, 137, 137);
+    --color-date-time-white:rgb(54, 54, 54);
+    
+}
+.marin-bottom-title{
+    margin-bottom: 30px;
+}
+.centered{
+    margin: 0px auto;
+    width: 1140px;
+}
+.cl-white{
+    color: rgb(255, 255, 255);
+}
+.text-center{
+    text-align: center;
+}
+.justify-content-space-around{
+    justify-content: space-around;
+}
+.justify-content-space-between{
+    justify-content:space-between;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.posi-relative{
+    position: relative;
+}
+.title-trip::after{
+    position: absolute;
+    content: " ";
+    border-top: 1px dashed #e1e1e1;
+    height: 2px;
+    width: 765px;
+    display: block;
+    right: 130px;
+    top: 27px;
+=======
+.display-flex{
+    display: flex;
+}
+:root{
+    --color-product-head: rgb(255, 255, 255);
+    --color-span-date-time-top:rgb(142, 142, 142);
+    --color-date-time-top: rgb(215, 215, 215);
+    --color-yellow:rgb(255, 204, 0);
+    --color-title-trip:rgb(51, 51, 51);
+    --color-title:rgb(50, 60, 63);
+    --color-span-date-time-white:rgb(137, 137, 137);
+    --color-date-time-white:rgb(54, 54, 54);
+    
+}
+.marin-bottom-title{
+    margin-bottom: 30px;
+}
+.centered{
+    margin: 0px auto;
+    width: 1140px;
+}
+.cl-white{
+    color: rgb(255, 255, 255);
+}
+.text-center{
+    text-align: center;
+}
+.justify-content-space-around{
+    justify-content: space-around;
+}
+.justify-content-space-between{
+    justify-content:space-between;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.posi-relative{
+    position: relative;
+}
+.title-trip::after{
+    position: absolute;
+    content: " ";
+    border-top: 1px dashed #e1e1e1;
+    height: 2px;
+    width: 765px;
+    display: block;
+    right: 130px;
+    top: 27px;
+>>>>>>> f305293f834fb10afb3a9f5df943d94f722ff687
+}

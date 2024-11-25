@@ -1,0 +1,258 @@
+*{
+   padding: 0px;
+   margin: 0px; 
+   box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* ====phan header===== */
+body{
+    width: 1496px;
+    margin: 0pc auto;
+    /* background-color: rgb(128, 126, 125); */
+}
+.header{
+    /* background-color: antiquewhite; */
+    height: 122px;
+}
+.logo{
+
+    float: left;
+    margin-right: 20px;
+    height: 149px;
+}
+.logo img{
+    width: 100%;
+}
+.header-top{
+    padding-left: 10px;
+    height: 50%;
+    display: flex;
+    padding-top: 18px;
+    width: 1349px;
+}
+.header-menu{
+    display: flex;
+    flex-basis: 80%;
+    /* width: 1000px; */
+}
+.header-menu li{
+    margin-right: 67px;
+}
+.header-links input{
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.product-1{
+    color: black;
+    font-weight: bolder;
+}
+.header-top .header-links{
+    margin-right: 0px;
+    width: 154px;
+    /* padding-right: 0px; */
+}
+.header-bottom{
+    padding-left: 10px;
+    padding-top: 15px;
+    display: flex;
+    height: 50%;
+    background-color: #F69631;
+}
+.product-2{
+    color: white;
+    font-weight: bolder;
+}
+.header-links{
+    display: flex;
+    margin-right: 20px;
+    flex-basis: 20%;
+}
+.fab{
+    margin-left: 30px;
+    width: 30px;
+}
+.links-1 i{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+/* ===== phanf content===== */
+.container img{
+    width: 100%;
+}
+.hot-news{
+    margin-top: 15px;
+    display: flex;
+    height: 648px;
+    justify-content: space-between;
+}
+.hot-news-1{
+    flex-basis: 50%;
+}
+.hot-new-2-2{
+    flex-basis: 49%;
+}
+.hot-new-2-2{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+.hot-news-2{
+    flex-basis: 100%;
+    /* height: 313px; */
+    /* padding-bottom: 5px; */
+    margin-bottom: -47px;
+    overflow: hidden;
+}
+ 
+.hot-news-3 , .hot-news-4{
+    flex-basis: 49%;
+}
+.text-1{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    position: relative;
+    bottom: 86px;
+    left: 13px;
+}
+.text-1-2{
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    position: relative;
+    bottom: 86px;
+    left: 13px;
+}
+.img-1{
+    filter: brightness(0.5);
+}
+/* =========================== */
+.post{
+    display: flex;
+    margin-top: 20px;
+    height: 1024px;
+}
+.news{
+    flex-basis: 68%;
+    position: relative;
+}
+.top-news{
+    flex-basis: 32%;
+}
+.post-title{
+    color: #F69631;
+    margin-bottom: 15px;
+
+}
+.post-title::after{
+    background-color: rgb(211, 100, 10);
+    content: "";
+    height: 2px;
+    width: 70px;
+    z-index: 0;
+    position: absolute;
+    left: 0px;
+    top: 28px;
+}
+.news-item{
+    display: flex;
+    height: 200px;
+    margin-bottom: 20px;
+    /* padding-bottom: 5px */
+    
+}
+.news-item-image{
+    flex-basis: 30%;
+    height: 200px;
+    margin-right: 5px;
+}
+.news-item-image img{
+    width: 100%;
+}
+.news-item-image + div{
+    flex-basis: 70%;
+    padding-left: 10px;
+}
+.news-item-title{
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 7px;
+    color: rgb(0, 0, 0) ;
+}
+.news-item-title a{
+    color: rgb(0, 0, 0) ;
+}
+.news-item-date{
+    color: rgb(207, 207, 207);
+    margin-bottom: 20px;
+}
+.top-news{
+    position: relative;
+}
+/* =================================== */
+.news-item-small-title a{
+    color: black;
+    font-size: 1.2rem;
+    
+}
+.news-item-small-title{
+    margin-bottom: 37px;
+}
+/* ======= phan footer====== */
+.footer{
+    
+    height: 372px;
+   
+}
+.product-3{
+    flex-basis: 70%;
+}
+.product-3 p ,.product-3 h1  {
+    color: #9c9c9c;
+    line-height: 37px;
+}
+.product-3 h1 {
+    font-weight: bolder;
+}
+.footer-top{
+    background-color: #383838;
+    display: flex;
+    height: 303px;
+    padding: 50px;
+    /* margin-bottom: 30px; */
+}
+.product-4{
+    flex-basis: 30%;
+}
+.product-4 h1{
+    color: #9c9c9c;
+    margin-left: 29px;
+}
+.product-4 ul{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-4 ul li a i{
+    color: #9c9c9c;
+    font-size: 2rem;
+}
+.footer-bottom{
+    background-color: black;
+}
+.footer-bottom p{
+    color: white;
+    padding: 10px;
+}
