@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>làm việc với thuộc tính trong object</h1>
+
+    <script>
+        // <!-- 1. truy xuất thuộc tính -->
+        let person = {
+            name : 'thân văn dũng',
+            age : 19,
+            gender : 'male'
+        }
+        // truy xuất bằng vòng lặp for
+        // for( x in person ){
+        //     document.write(x +' : '+ person[x]+'<br>');
+        // }
+        person.age = 17
+        person.canNang = 65
+        console.log(person)
+    </script>
+</body>
+</html>

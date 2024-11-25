@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CÁC PHƯƠNG THỨC TRONG Object</h1>
+    <script>
+        let number = {
+            a : 12,
+            b : 25,
+            sum: function(){
+                return this.a+this.b
+            }
+        }
+        number.minus = function(){
+            return this.a-this.b
+        }
+        document.write(number.minus())
+    </script>
+</body>
+</html>

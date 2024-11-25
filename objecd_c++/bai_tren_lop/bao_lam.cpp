@@ -153,39 +153,29 @@ void thiSinhDau(vector<ThiSinh*> ds){
 
 int main(){
     vector<ThiSinh*> ds;
-    ds.push_back(new ThiSinh_KhoiTN("TS01", "Nguyen Van A", "Ha Noi", 0.5, 8, 7, 9));
-    ds.push_back(new ThiSinh_KhoiXH("TS02", "Tran Thi B", "Ho Chi Minh", 0.5, 9, 8, 7));
-    ds.push_back(new ThiSinh_KhoiTN("TS03", "Le Van C", "Da Nang", 0.5, 7, 9, 8));
-    ds.push_back(new ThiSinh_KhoiXH("TS04", "Nguyen Thi D", "Ha Noi", 0.5, 8, 7, 9));
-    ds.push_back(new ThiSinh_KhoiTN("TS05", "Tran Van E", "Ho Chi Minh", 0.5, 9, 8, 7));
-    ds.push_back(new ThiSinh_KhoiXH("TS06", "Le Thi F", "Da Nang", 0.5, 7, 9, 8));
-    ds.push_back(new ThiSinh_KhoiTN("TS07", "Nguyen Van G", "Ha Noi", 0.5, 8, 7, 9));
-    ds.push_back(new ThiSinh_KhoiXH("TS08", "Tran Thi H", "Ho Chi Minh", 0.5, 9, 8, 7));
-    ds.push_back(new ThiSinh_KhoiTN("TS09", "Le Van I", "Da Nang", 0.5, 7, 9, 8));
-    ds.push_back(new ThiSinh_KhoiXH("TS10", "Nguyen Thi J", "Ha Noi", 0.5, 8, 7, 9));
-    // int n;
-    // cout << "Nhap so luong thi sinh(n<=50): ";
-    // cin >> n;
-    // for(int i = 0; i < n; i++){
-    //     ThiSinh* tmp;
-    //     cout << "Nhap thong tin thi sinh thu " << i+1 << endl;
-    //     cout << "Khoi cua thi sinh(1:Khoi TN,2:Khoi XH) la:";
-    //     int chon;
-    //     cin >> chon;
-    //     if( chon == 1){
-    //          tmp = new ThiSinh_KhoiTN();
-    //     }
-    //     else if(chon == 2){
-    //         tmp = new ThiSinh_KhoiXH();
-    //     }
-    //     else{
-    //         cout << "Khoi khong hop le, xin moi chon lai!" << endl;
-    //         --i;
-    //         continue;
-    //     }
-    //     tmp->nhap();
-    //     ds.push_back(tmp);
-    // }
+    int n;
+    cout << "Nhap so luong thi sinh(n<=50): ";
+    cin >> n;
+    for(int i = 0; i < n; i++){
+        ThiSinh* tmp;
+        cout << "Nhap thong tin thi sinh thu " << i+1 << endl;
+        cout << "Khoi cua thi sinh(1:Khoi TN,2:Khoi XH) la:";
+        int chon;
+        cin >> chon;
+        if( chon == 1){
+             tmp = new ThiSinh_KhoiTN();
+        }
+        else if(chon == 2){
+            tmp = new ThiSinh_KhoiXH();
+        }
+        else{
+            cout << "Khoi khong hop le, xin moi chon lai!" << endl;
+            --i;
+            continue;
+        }
+        tmp->nhap();
+        ds.push_back(tmp);
+    }
     sort(ds.begin(),ds.end(),ss);
     for(int i = ds.size() - 1 ; i >= 0; i--){
         ds[i]->xuat();
