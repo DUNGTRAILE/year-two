@@ -15,9 +15,13 @@
                 return this.firName + ' ' + this.lasName
             },
             set fullName(info){
-                info = infor.split(' ');
+                info = info.split(' ')
+                this.firName = info[0]
+                this.lasName = info[info.length - 1]
             }
         }
+        // console.log(person.fullName)
+        person.fullName = 'Nguyễn Văn Thanh'
         console.log(person.fullName)
 
 </script>
