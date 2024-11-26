@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom html class</title>
+</head>
+<body>
+  <h1>dom html class</h1>
+  <h1 id="demo" class="class1 class2 class3">DEMO</h1>
+  <script>
+    const demo  = document.getElementById("demo")
+    // console.log(demo.className)
+    // console.log(demo.classList.length)
+    // demo.classList[0]  ='thay'
+    // thêm class
+    // demo.classList.add("moi")
+    // xóa class
+    // demo.classList.remove("class1")
+    // nếu tồn tại -> xóa nếu không tồn tại -> thêm
+    demo.classList.toggle('open')
+    // thay đổi tên class
+    demo.classList.replace('class1', 'mot')
+    console.log(demo.classList)
+  </script>
+</body>
+</html>

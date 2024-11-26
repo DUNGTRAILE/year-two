@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>even add</title>
+</head>
+<body>
+  <h1>How add event to element</h1>
+<!--  inline element-->
+<!--  <button id="btn" onclick="show()">click</button>-->
+<button id="btn">click</button>
+  <script>
+    function show(){
+      alert('baạn không thể truy cập')
+    }
+    // <!--  c2 sử dụng script-->
+    // const btn = document.getElementById('btn')
+    // btn.onclick = show
+    btn.addEventListener('click', function(){
+      alert('lần 1')
+    })
+    btn.addEventListener('click', function(){
+      alert('lần 2')
+    })
+  </script>
+
+</body>
+</html>

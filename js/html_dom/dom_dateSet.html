@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom dataSet</title>
+</head>
+<body>
+  <h1 id="uer" data-id="2502" data-username="tvd.com"
+    data-age="19" data-date-of-birth="">Thân vawb Dũng</h1>
+<script>
+  // data-id
+  // data-*...............
+  const user = document.getElementById('uer')
+  //element.dataser
+  console.log(user.dataset)
+  //cập nhật giá trị
+  // user.setAttribute('data-age', '89')
+  user.dataset.dateOfBirth = new Date(2020, 1, 1);
+  delete user.dataset.age
+  console.log(user.dataset)
+
+</script>
+</body>
+</html>

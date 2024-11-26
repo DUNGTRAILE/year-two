@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>event key</title>
+</head>
+<body>
+<h1>Event key</h1>
+<form action="">
+  <fieldset>
+    <legend>Điền thông tin</legend>
+    <lable for="username">Tên đăng nhập</lable>
+
+    <input type="text" name="username" id="username">
+    <br> <br>
+    <lable for="password">Mật Khẩu</lable>
+    <input type="password" name="pass" id="password">
+    <br> <br>
+    <lable for="city">Giáo xứ:</lable>
+    <select name="city" id="city">
+      <option value="">------chọn-----</option>
+      <option value="1">Trại Lê</option>
+      <option value="2">Bình Hòa</option>
+      <option value="3">Vinh Long</option>
+      <option value="4">Cây Bàng</option>
+      <option value="5">Kỷ Lịch</option>
+    </select>
+    <br> <br>
+    <input type="submit" value="Đăng Ký">
+  </fieldset>
+</form>
+<script>
+  const userName = document.getElementById('username')
+  userName.addEventListener('keydown', function(event){
+    console.log(event)
+  })
+
+</script>
+</body>
+</html>
