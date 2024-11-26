@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>preventDefault</title>
+</head>
+<body>
+  <h1>preventDefault() js</h1>
+  <a href="">KÍCH</a>
+<script>
+  const eElement = document.querySelector('a')
+  eElement.addEventListener('click',function(e){
+    console.log(eElement.innerText)
+    e.preventDefault()
+    // return false
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập</title>
+</head>
+<body>
+  <h1>BÀI TẬP</h1>
+  <form action="" id="demo">
+    <fieldset>
+      <legend>Điền thông tin</legend>
+      <lable for="fullname">Họ và tên</lable>
+      <input type="text" name="fullname" id="fullname">
+      <br> <br>
+      <lable for="username">Tên đăng nhập</lable>
+      <input type="text" name="username" id="username">
+      <br> <br>
+      <lable for="password">Mật Khẩu</lable>
+      <input type="password" name="pass" id="password">
+      <br> <br>
+      <lable for="city">Giáo xứ:</lable>
+      <select name="city" id="city">
+        <option value="">------chọn-----</option>
+        <option value="1">Trại Lê</option>
+        <option value="2">Bình Hòa</option>
+        <option value="3">Vinh Long</option>
+        <option value="4">Cây Bàng</option>
+        <option value="5">Kỷ Lịch</option>
+      </select>
+      <br> <br>
+      <input type="submit" value="Đăng Ký">
+    </fieldset>
+  </form>
+  <div id="result">
+<!--    in kết quả-->
+  </div>
+  <script>
+    function mycity(val){
+      if (val == ""){
+        return 'bạn chưa chọn thành phô'
+      }
+      if (val == 1){
+        return 'Trại lê'
+      }
+      if (val == 2){
+        return 'Bình hòa'
+      }
+      if (val == 3){
+        return 'Vinh long'
+      }
+      if (val == 4){
+        return 'Cây bàng'
+      }
+      if (val == 5){
+        return 'Kỷ lịch'
+      }
+    }
+    const result = document.querySelector("#result")
+    const form = document.forms.demo
+    form.addEventListener('submit', function(e) {
+      result.innerHTML = ''
+      result.innerHTML += 'Fullname: ' + '<b>'+form.fullname.value +'</b>'+ '<br>'
+      result.innerHTML += 'Username: ' + '<b>'+form.username.value +'</b>'+ '<br>'
+      result.innerHTML += 'Password: ' + '<b>'+form.password.value +'</b>'+ '<br>'
+      result.innerHTML += 'Giáo họ: ' + '<b>'+ mycity(form.city.value) +'</b>'+ '<br>'
+      e.preventDefault()
+    })
+  </script>
+</body>
+</html>
