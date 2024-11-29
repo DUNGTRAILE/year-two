@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hasAttribute</title>
+</head>
+<body>
+<a href="" title="Demo" count="99"> JS Beginner</a>
+<div id="ket_qua">
+
+</div>
+<script>
+  const a = document.querySelector('a')
+  a.hasAttribute('h')
+  console.log(a.hasAttribute('count'))
+  if(a.hasAttribute('count')){
+    console.log(`Số lượng truy cập: ${a.getAttribute('count')}`)
+    document.querySelector('#ket_qua').innerHTML = `Số lượng truy cập: ${a.getAttribute('count')}`
+  }
+</script>
+</body>
+</html>
