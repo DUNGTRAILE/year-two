@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>arrow function</title>
+</head>
+<body>
+<h1>Arrow function</h1>
+<script>
+    //viet ham xuat loi xin chao
+    // function sayHi(){
+    //     return 'hello wordl'
+    // }
+    // let sayHi = () => {return 'hello'}
+    // let sayHi = () => 'Hello World'
+    let sayHi = (name) => `Hello ${name}`
+    console.log(sayHi('dung'))
+    const h1 = document.querySelector('h1')
+    h1.addEventListener('mouseover' , () => {
+        h1.style.color = 'red'
+    })
+    h1.addEventListener('mouseout' , () => {
+        h1.style.color = 'black'
+    })
+</script>
+</body>
+</html>
