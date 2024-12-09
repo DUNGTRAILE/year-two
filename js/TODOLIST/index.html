@@ -2,30 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+  <link rel="stylesheet" href="assets/css/style.css">
+    <script type="module" src="app.js"></script>
     <title>TODOlist</title>
 </head>
 <body>
 <div id="header">
   <h1>TODOLIST</h1>
 </div>
-<div id="contenter">
-  <div id="forms">
-    <form action="">
-      <label for="job">Công việc cần làm</label>
-      <input type="text" name="job" id="job">
-      <input type="submit" value="ADD TASK">
-    </form>
+<div id="container">
+    <div id="forms" edit="edit" action="">
+      <input type="text" flag='-1'    placeholder="Enter your task" name="job" id="job" >
+        <button id="submit" type="submit">ADD TASK</button>
+        <div class="tt"></div>
+    </div>
     <div class="list-job">
       <ul>
-        <li class="produc-job">
-          <div class="name-job">Chạy Bộ</div>
-          <div class="tool-job">
-
-          </div>
-        </li>
+<!--        <li class="product-job">-->
+<!--          <div class="name-job"><del>Chạy Bộ</del></div>-->
+<!--          <div class="tool-job">-->
+<!--            <img id="pen" src="assets/images/Vector.png" hover="assets/images/xxx.png" alt="">-->
+<!--            <img id="del" src="assets/images/Vector(1).png" hover="assets/images/nhan.png" alt="">-->
+<!--          </div>-->
+<!--        </li>-->
       </ul>
     </div>
-  </div>
+  <div class="count"></div>
 </div>
+
 </body>
 </html>
