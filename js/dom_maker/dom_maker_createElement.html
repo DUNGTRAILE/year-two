@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom maker create element</title>
+</head>
+<body>
+<script>
+  // tạo div
+  // - #wrapper
+  // - .text-center
+  // - content div
+  const body = document.body
+  const divWrapper = document.createElement('div')
+  const p = document.createElement('p')
+
+  divWrapper.id = 'wrapper'
+  divWrapper.calssName = 'text-center'
+  divWrapper.innerText = 'content div'
+  body.appendChild(divWrapper)
+  p.textContent = 'hello world'
+  body.appendChild(p)
+  console.log(divWrapper)
+</script>
+</body>
+</html>

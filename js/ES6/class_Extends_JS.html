@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class JS</title>
+</head>
+<body>
+<h1>CLass JS</h1>
+<div class="root"></div>
+<script>
+    class Use{
+        // - thuoc tinh
+        constructor(fullName){
+            this.fullName = fullName
+        }
+        show(){
+            return `Xin chao ${this.fullName}`
+        }
+        render(){
+            document.write(this.show())
+        }
+        // - phuong thuc
+    }
+
+    class Student extends Use{
+        constructor(fullName,uni, std_year){
+            super(fullName)
+            this.uni = uni
+            this.std_year = std_year
+        }
+        introduce(){
+            return `Hello, I am ${this.fullName}`
+         }
+    }
+    let stu = new Student('than van dung', 'khoa hoc hue',2)
+    console.log(stu.introduce())
+</script>
+</body>
+</html>

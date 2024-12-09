@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>array map</title>
+</head>
+<body>
+<h1>Array map</h1>
+<script>
+  let arr = [1, 2, 3, 4, 5]
+  arr.forEach( (item) => {
+    console.log(item)
+  })
+  let newArr = arr.map((element,index,array) => {
+        // 3 * 3 = 9
+        return `${index+1}. ${element} * 3 = ${element*3}`
+        // return element*3
+  })
+  document.write(newArr + '<br>')
+</script>
+</body>
+</html>

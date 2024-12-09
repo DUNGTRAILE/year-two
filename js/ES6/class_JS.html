@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class JS</title>
+</head>
+<body>
+<h1>CLass JS</h1>
+<div class="root"></div>
+<script>
+    class Use{
+        // - thuoc tinh
+        constructor(fullName){
+            this.fullName = fullName
+        }
+        show(){
+            return `Xin chao ${this.fullName}`
+        }
+        render(){
+            document.write(this.show())
+        }
+        // - phuong thuc
+    }
+    let user = new Use('Than Van Dung')
+    user.render()
+</script>
+</body>
+</html>

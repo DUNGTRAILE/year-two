@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>event key</title>
+    <title>event submit</title>
 </head>
 <body>
-<h1>Event key</h1>
-<form action="">
+<h1>Event submit</h1>
+<form action="" id="demo">
   <fieldset>
     <legend>Điền thông tin</legend>
     <lable for="username">Tên đăng nhập</lable>
@@ -31,20 +31,13 @@
 </form>
 <script>
   const userName = document.getElementById('username')
-<<<<<<< HEAD
-  userName.addEventListener('change', function(event){
+  const registerForm = document.forms.demo
+  console.log(registerForm)
+  registerForm.addEventListener('submit',function(e){
     console.log(userName.value)
-=======
-  //sa ra ngay khi người dùng ấn phím
-  // userName.addEventListener('keydown', function(event){
-  //   console.log(event)
-  // })
-  //sảy ra sau khji người dùng thả phím ra
-  userName.addEventListener('keyup', function(event){
-    console.log(event)
->>>>>>> f3095fdd857e193ac135dc259e94b8cf5748172f
+    e.preventDefault()
+    // alert('đang gửi dữ liệu')
   })
-
 </script>
 </body>
 </html>

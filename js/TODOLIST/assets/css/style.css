@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+
+#header{
+    margin-top: 20px;
+    height: 60px;
+    text-align: center;
+}
+
+#container{
+    color: #C7C7C7;
+    background: #1E272E;
+    margin:0px auto;
+    flex-direction: column;
+    gap: 27px;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    padding: 30px;
+    min-height: 40px;
+    width: 542px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+
+/*===========producr-job============*/
+.product-job{
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #525252;
+    height: 40px;
+    width: 100%;
+}
+.name-job{
+    font-family: "Poppins","VnArial",sans-serif;
+    font-size: 15px;
+}
+.tool-job{
+    padding-top: 3px;
+    display: flex;
+    justify-content: space-between;
+    width: 38px;
+    height: 20px;
+}
+.tool-job img{
+    width: 13px;
+    height: 13px;
+}
+#forms{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#forms #job{
+    color: #c0c0c0;
+    font-size: 16px;
+    width: 386px;
+    height: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #FF6F6F;
+    /*height: 40px;*/
+}
+#submit ,#edit{
+    width: 86px;
+    height: 100%;
+    background: #FF2B2B;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+}

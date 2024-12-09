@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>node next prev</title>
+</head>
+<body>
+<h1>Next, prev sibling element</h1>
+<ul id="menu">
+    <li>item1</li>
+    <li>item2</li>
+    <li class="curent">item3</li>
+    <li>item4</li>
+    <li>item5</li>
+</ul>
+<script>
+    const current = document.querySelector('.curent');
+    console.log(current.previousElementSibling.innerHTML)
+    console.log(current.nextElementSibling.innerHTML)
+</script>
+</body>
+</html>
