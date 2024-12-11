@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Static Class</title>
+</head>
+<body>
+<h1>static</h1>
+<script>
+    class Person{
+        constructor(name){
+            this.name = name;
+        }
+        static sayHi(x){
+            return `Hello ${x.name}`
+        }
+    }
+    let my = new Person("John")
+    console.log(Person.sayHi(my))
+</script>
+</body>
+</html>

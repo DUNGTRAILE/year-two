@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm nhiều sự kiện giống nhau</title>
+    <style>
+        #myButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<button id="myButton">Nhấn tôi</button>
+
+<script>
+    const myButton = document.getElementById('myButton');
+
+    // Hàm xử lý sự kiện
+    function handleClick() {
+        alert('Nút đã được nhấn!');
+    }
+
+    // Thêm sự kiện click nhiều lần
+    for (let i = 0; i < 3; i++) {
+        myButton.addEventListener('click', handleClick);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuc hanh 1</title>
+</head>
+<body>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #header, #footer{
+    height: 50px;
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    width:100vw;
+  }
+  #container{
+    width: 100vw;
+    display: flex;
+    /*align-items: flex-start;*/
+    flex-wrap: wrap;
+    /*height: auto;*/
+    /*background-color: black;*/
+  }
+  .content{
+    width: 100%;
+    height: auto;
+    background: #7a7775;
+    /*text-align: justify;*/
+  }
+  .abs{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    height: auto;
+  }
+  @media(min-width: 600px){
+    .content{
+      width: 80%;
+      /*height: auto;*/
+      background: #7a7775;
+      /*text-align: justify;*/
+    }
+    .abs{
+      width: 20%;
+      background-color: black;
+      color: white;
+      padding: 10px;
+      /*height: 100%;*/
+    }
+  }
+  @media(min-width: 1200px){
+    #wrapper{
+      width: 1200px;
+      /*padding: auto;*/
+      margin: 0 auto;
+    }
+    #header, #footer{
+      height: 50px;
+      background-color: darkred;
+      color: white;
+      text-align: center;
+      width:1200px;
+    }
+    #container{
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      height: auto;
+      background-color: black;
+    }
+    .content{
+      width: 80%;
+      height: auto;
+      background: #b4b4b1;
+      /*text-align: justify;*/
+    }
+    .abs{
+      width: 20%;
+      background-color: black;
+      color: white;
+      padding: 10px;
+      height: auto;
+    }
+  }
+</style>
+<div id="wrapper">
+  <div id="header">
+    <h1>header</h1>
+  </div>
+  <div id="container">
+    <div class="content">
+      <h1>CHỦ ĐỀ</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aliquid aperiam asperiores at
+        beatae consequatur cupiditate deleniti distinctio dolorem doloremque dolores doloribus, dolorum eaque earum eius
+        ex facilis, fugit hic illum incidunt laborum placeat provident quas qui quisquam reprehenderit temporibus
+        voluptas voluptates voluptatibus. Aperiam dolores id itaque nisi sequi. Asperiores commodi maiores
+        reprehenderit? Alias amet at autem cumque debitis deleniti dicta dolorem dolorum eos, est facere fuga illum
+        incidunt nemo non omnis perferendis provident quisquam ratione repudiandae sit tempore ullam! Architecto
+        asperiores, esse? Amet dicta distinctio earum est facilis fugit, hic impedit modi nemo quaerat rem sequi veniam
+        voluptatibus!</p><h1>GIỚI THIỆU</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aliquid aperiam asperiores at
+        beatae consequatur cupiditate deleniti distinctio dolorem doloremque dolores doloribus, dolorum eaque earum eius
+        ex facilis, fugit hic illum incidunt laborum placeat provident quas qui quisquam reprehenderit temporibus
+        voluptas voluptates voluptatibus. Aperiam dolores id itaque nisi sequi. Asperiores commodi maiores
+        reprehenderit? Alias amet at autem cumque debitis deleniti dicta dolorem dolorum eos, est facere fuga illum
+        incidunt nemo non omnis perferendis provident quisquam ratione repudiandae sit tempore ullam! Architecto
+        asperiores, esse? Amet dicta distinctio earum est facilis fugit, hic impedit modi nemo quaerat rem sequi veniam
+        voluptatibus!</p><h1>TỔNG QUAN</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aliquid aperiam asperiores at
+        beatae consequatur cupiditate deleniti distinctio dolorem doloremque dolores doloribus, dolorum eaque earum eius
+        ex facilis, fugit hic illum incidunt laborum placeat provident quas qui quisquam reprehenderit temporibus
+        voluptas voluptates voluptatibus. Aperiam dolores id itaque nisi sequi. Asperiores commodi maiores
+        reprehenderit? Alias amet at autem cumque debitis deleniti dicta dolorem dolorum eos, est facere fuga illum
+        incidunt nemo non omnis perferendis provident quisquam ratione repudiandae sit tempore ullam! Architecto
+        asperiores, esse? Amet dicta distinctio earum est facilis fugit, hic impedit modi nemo quaerat rem sequi veniam
+        voluptatibus!</p>
+    </div>
+    <div class="abs">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam blanditiis commodi delectus dicta
+        doloribus incidunt ipsa ipsum maxime molestias nam nesciunt odio quae, quas quo quos totam veniam voluptas?</p>
+    </div>
+  </div>
+  <div id="footer">
+    <h1>footer</h1>
+  </div>
+</div>
+</body>
+</html>

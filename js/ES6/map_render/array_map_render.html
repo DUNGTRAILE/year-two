@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <link rel="stylesheet" href="styles.css">
+    <title>Array Render</title>
+</head>
+<body>
+<!--<style>-->
+<!--    body{-->
+<!--        background-color: aquamarine;-->
+<!--    }-->
+<!--</style>-->
+<h1>Array render</h1>
+<ul class="contenter">
+</ul>
+
+<script>
+    const products = [
+        {
+            image: 'https://cdn.tgdd.vn/Products/Images/7077/325619/befit-hunter2-day-silicone-den-tb-600x600.jpg',
+            name: 'Iphone 13 Pro Max',
+            ram: '6 GB',
+            price: '7.000.000',
+        },
+        {
+            image: 'https://cdn.tgdd.vn/Products/Images/7077/325619/befit-hunter2-day-silicone-den-tb-600x600.jpg',
+            name: 'Samsung Galaxy S22',
+            ram: '8 GB',
+            price: '10.000.000',
+        },
+        {
+            image: 'https://cdn.tgdd.vn/Products/Images/7077/325619/befit-hunter2-day-silicone-den-tb-600x600.jpg',
+            name: 'Dell Vostro 3510',
+            ram: '16 GB',
+            price: '12.500.000',
+        },
+        {
+            image: 'https://cdn.tgdd.vn/Products/Images/7077/325619/befit-hunter2-day-silicone-den-tb-600x600.jpg',
+            name: 'Xiaomi 11 Lite 5G',
+            ram: '8 GB',
+            price: '6.500.000',
+        },
+        {
+            image: 'https://cdn.tgdd.vn/Products/Images/7077/325619/befit-hunter2-day-silicone-den-tb-600x600.jpg',
+            name: 'Oppo Reno8 5G',
+            ram: '8 GB',
+            price: '8.000.000',
+        },
+        {
+            image: 'https://cdn.tgdd.vn/Products/Images/7077/325619/befit-hunter2-day-silicone-den-tb-600x600.jpg',
+            name: 'HP Pavilion 15',
+            ram: '8 GB',
+            price: '15.000.000',
+        },
+        {
+            image: 'https://cdn.tgdd.vn/Products/Images/7077/325619/befit-hunter2-day-silicone-den-tb-600x600.jpg',
+            name: 'Vivo Y35',
+            ram: '6 GB',
+            price: '5.500.000',
+        },
+        {
+            image: 'https://cdn.tgdd.vn/Products/Images/7077/325619/befit-hunter2-day-silicone-den-tb-600x600.jpg',
+            name: 'Realme C33',
+            ram: '4 GB',
+            price: '3.900.000',
+        },
+        {
+            image: 'https://cdn.tgdd.vn/Products/Images/7077/325619/befit-hunter2-day-silicone-den-tb-600x600.jpg',
+            name: 'Acer Aspire 7',
+            ram: '16 GB',
+            price: '14.000.000',
+        },
+        {
+            image: 'https://cdn.tgdd.vn/Products/Images/7077/325619/befit-hunter2-day-silicone-den-tb-600x600.jpg',
+            name: 'Iphone 11',
+            ram: '4 GB',
+            price: '9.000.000',
+        }
+    ];
+
+    // đổ dữ liệu
+    let productsHTML = products.map((product) => {
+        return `<li>
+        <div class="product">
+            <a href="">
+                <img src= ${product.image}
+                     alt="" class="img_product">
+                <span class="info">
+                    <p class="name">${product.name}</p>
+                    <p class="ram">Ram: ${product.ram}</p>
+                    <p class="price">Gia: ${product.price}</p>
+                </span>
+            </a>
+        </div>
+    </li>`
+    })
+    console.log(productsHTML)
+    document.querySelector('.contenter').innerHTML = productsHTML.join('')
+</script>
+</body>
+</html>

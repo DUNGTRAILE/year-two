@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>get set</title>
+</head>
+<body>
+<h1>GET SET</h1>
+<script>
+  class Student{
+    constructor(fullName, uni , std_year){
+      this.fullName = fullName;
+      this.uni = uni;
+      this.std_year = std_year;
+    }
+    set setFullName(fullName){
+      this.fullName = fullName;
+    }
+    get getFullName(){
+      return this.fullName;
+    }
+  }
+  let my = new Student('TVDung', '1990', '1991');
+  my.setFullName ='TVDungs';
+  console.log(my.getFullName);
+</script>
+</body>
+</html>
