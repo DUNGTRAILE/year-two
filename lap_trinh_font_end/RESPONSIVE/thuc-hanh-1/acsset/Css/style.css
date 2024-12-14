@@ -3,8 +3,127 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-#wrapper{
-    max-width: 1200px;
+img{
+    max-width: 100%;
+    height: auto;
+}
+ul{
+    list-style: none;
+}
+.center{
+    width: 1200px;
     margin: 0 auto;
 }
+a{
+    text-decoration: none;
+    display: block;
+}
+#header{
+    position: relative;
+    width: 100vw;
+    height: 58px;
+    background-color: rgb(39, 39, 39);
+    position: fixed;
+}
+.content-header{
+    padding: 10px;
+    height: 58px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    gap: 5px;
+    color:rgb(255, 255, 255);
+}
+.logo p{
+    padding-top: 5px;
+    font-size: 20px;
+}
+.logo ,.logo img,.all , .all img{
+
+    height: 100%;
+}
+.menu-header{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    display: none;
+    margin-top: 48px;
+    transition: display 0.5s ease;
+    /* transform: translateX(0); */
+
+}
+.menu-header ul a{
+    padding: 5px 5px;
+    height: 40px;
+    background-color: #272727;
+    width: 100%;
+    border-bottom: 1px solid rgb(97, 97, 97);
+    color: aliceblue;
+}
+.menu-header ul a:hover{
+    background-color: #5c5b5b;
+}
+h2{
+    margin: 10px 0px;
+}
+
+#container{
+    padding-top: 60px;
+}
+
+
+/* @media only screen and (min-width: 576px) {
+    body {
+      background: yellow;
+    }
+  } */
+@media only screen and (min-width: 768px) {
+    .all{
+        display: none;
+    }
+    
+    .menu-header{
+        flex-basis: 50%;
+        margin-top: 0px;
+        position: relative;
+        width: 20px;
+        display: block;
+        /* border: 1px solid red; */
+    }
+    .menu-header ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-header ul a{
+        display: flex;
+        justify-content: center;
+        border: none;
+        /* border: 1px solid red; */
+    }
+    .menu-header ul a:hover{
+        background-color: #272727;
+        color: rgb(197, 228, 255);
+    }
+    .download{
+        flex-basis: 20%;
+        background-color: rgb(0, 102, 190);
+    }
+    .download a{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .content-header,#container{
+        width: 1200px;
+        margin: 0px auto;
+    }
+  }

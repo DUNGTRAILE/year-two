@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intersection Observer</title>
+    <style>
+        .hidden {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .visible {
+            opacity: 1;
+        }
+        .content {
+            height: 1000px;
+        }
+        .box {
+            width: 300px;
+            height: 300px;
+            margin: 1000px auto;
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="box hidden" id="box"></div>
+    </div>
+
+    <script>
+        // Chọn phần tử cần theo dõi
+        const box = document.getElementById('box');
+
+        // Tạo một Intersection Observer
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Khi phần tử xuất hiện trong viewport, thêm class visible
+                    entry.target.classList.add('visible');
+                    entry.target.classList.remove('hidden');
+                    // Ngừng theo dõi phần tử khi đã xuất hiện
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.5 // Phần tử phải chiếm ít nhất 50% cửa sổ để được coi là xuất hiện
+        });
+
+        // Bắt đầu quan sát phần tử box
+        observer.observe(box);
+    </script>
+</body>
+</html>
