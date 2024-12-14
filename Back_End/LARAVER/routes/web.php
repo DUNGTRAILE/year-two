@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\AdminPostController;
 // use App\Http\Controllers\PostController;
 /*
 |--------------------------------------------------------------------------
@@ -71,9 +72,18 @@ Route::get('/', function () {
 // });
 
 
-Route::get('/product/show/{id}',[ProductController::class,'show']);
-Route::get('/product/creat',[ProductController::class,'create']);
-Route::get('/product/update/{id}',[ProductController::class,'update']);
+// Route::get('/product/show/{id}',[ProductController::class,'show']);
+// Route::get('/product/creat',[ProductController::class,'create']);
+// Route::get('/product/update/{id}',[ProductController::class,'update']);
 
 
-Route::resource('post','PostController');
+// Route::resource('post',PostController::class);
+
+Route::get('/post/add',[AdminPostController::class,'add']);
+Route::get('/post/show',[AdminPostController::class,'show']);
+Route::get('/post/update/{$id}',[AdminPostController::class,'update']);
+Route::get('/post/delete/{id}',[AdminPostController::class,'delete']);
+
+
+
+

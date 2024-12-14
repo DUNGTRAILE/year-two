@@ -12,6 +12,7 @@ class PostController extends Controller
     public function index()
     {
         //
+        return ' hiện thị danh sách bài viết';
     }
 
     /**
@@ -19,8 +20,8 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
-        return 'them bai viet';
+        //xử lý thêm dữ liệu
+        return redirect('post');
     }
 
     /**
