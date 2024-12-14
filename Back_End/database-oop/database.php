@@ -120,4 +120,4 @@ echo '<pre>';
 print_r($user);
 echo '</pre>';
 // echo $db->update('users', $dataf, 'id = 1');
-echo $db->delete('users','id = 1');
+echo $db->delete('users','id = 4');
