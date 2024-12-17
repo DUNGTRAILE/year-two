@@ -1,9 +1,13 @@
 <?php
 
+
+use App\Models\Post;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\AdminPostController;
+use App\Http\Controllers\FeaturedImagesController;
 // use App\Http\Controllers\PostController;
 /*
 |--------------------------------------------------------------------------
@@ -79,11 +83,42 @@ Route::get('/', function () {
 
 // Route::resource('post',PostController::class);
 
-Route::get('/post/add',[AdminPostController::class,'add']);
-Route::get('/post/show',[AdminPostController::class,'show']);
-Route::get('/post/update/{$id}',[AdminPostController::class,'update']);
-Route::get('/post/delete/{id}',[AdminPostController::class,'delete']);
+// Route::get('admin/post/add',[AdminPostController::class,'add']);
+// Route::get('admin/post/show',[AdminPostController::class,'show']);
+// Route::get('/post/update/{$id}',[AdminPostController::class,'update']);
+// Route::get('/post/delete/{id}',[AdminPostController::class,'delete']);
+
+// 
+
+// Route::get('admin/post/show', [AdminPostController::class,'show']);
+// Route::get('admin/post/update/{id}',[AdminPostController::class,'update'] );
+// Route::get('admin/post/add',[AdminPostController::class,'add'] );
 
 
+// Route::get('users/insert', function(){
+//     DB::table('users')->insert(
+//         ['name' => 'phan xuan chinh','email' =>'xuanchinh@gmail.com','password' => bcrypt('dchinhg123tl')]
+//     );
+// });
+
+// Route::get('post/add',[PostController::class,'add']);
+// // Route::get('post/show',[PostController::class,'show']);
+// Route::get('post/updata/{id}',[PostController::class,'updata']);
+// Route::get('post/delete/{id}',[PostController::class,'delete']);
 
 
+// Route::get('products/add',[ProductController::class,'add']);
+// Route::get('products/show',[ProductController::class,'show']);
+// Route::get('products/updata/{id}',[ProductController::class,'update']);
+Route::get('products/delete/{id}',[ProductController::class,'delete']);
+
+
+// Route::get('/post/read', function(){
+//     $posts = Post::all();
+//     return $posts;
+// });
+Route::get('posts/restore/{id}',[PostController::class,'restore']);
+Route::get('posts/read',[PostController::class,'read']);
+Route::get('posts/delete/{id}',[PostController::class,'delete']);
+Route::get('posts/permanentlyDelete/{id}',[PostController::class,'permanentlyDelete']);
+Route::get('images/read',[FeaturedImagesController::class,'read']);

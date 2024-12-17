@@ -8,13 +8,13 @@ class AdminPostController extends Controller
 {
     //
     function add(){
-        return 'Thêm bài Viết';
+        return view('admin.post.add');
     }
     function show(){
-        return 'Hiện thị tất cả bài viết';
+        return view('admin.post.show');
     }
     function update($id){
-        return "cập nhật bài viết $id";
+        return view('admin.post.update',['id' => $id]);
     }
     function delete($id){
         return "xóa bài viết $id";
