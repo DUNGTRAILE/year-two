@@ -32,7 +32,8 @@ return [
     */
 
     'lifetime' => env('SESSION_LIFETIME', 120),
-
+    
+    // có được hủy sau khi tắt không
     'expire_on_close' => false,
 
     /*

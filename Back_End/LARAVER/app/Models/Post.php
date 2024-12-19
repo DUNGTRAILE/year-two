@@ -10,7 +10,7 @@ class Post extends Model
 {
     use SoftDeletes;
     use HasFactory;
-    protected $fillable =['title','user_id','votes'];
+    protected $fillable =['title','user_id','votes','thumbnail'];
     function FeaturedImages(){
         return $this->hasOne(featuredImages::class);
     }

@@ -41,6 +41,7 @@ return array(
     'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
     'Spatie\\LaravelIgnition\\' => array($vendorDir . '/spatie/error-solutions/legacy/laravel-ignition', $vendorDir . '/spatie/laravel-ignition/src'),
     'Spatie\\Ignition\\' => array($vendorDir . '/spatie/error-solutions/legacy/ignition', $vendorDir . '/spatie/ignition/src'),
+    'Spatie\\Html\\' => array($vendorDir . '/spatie/laravel-html/src'),
     'Spatie\\FlareClient\\' => array($vendorDir . '/spatie/flare-client-php/src'),
     'Spatie\\ErrorSolutions\\' => array($vendorDir . '/spatie/error-solutions/src'),
     'Spatie\\Backtrace\\' => array($vendorDir . '/spatie/backtrace/src'),

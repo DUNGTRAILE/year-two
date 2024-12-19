@@ -41,6 +41,17 @@
       0 => 'Termwind\\Laravel\\TermwindServiceProvider',
     ),
   ),
+  'spatie/laravel-html' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\Html\\HtmlServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Html' => 'Spatie\\Html\\Facades\\Html',
+    ),
+  ),
   'spatie/laravel-ignition' => 
   array (
     'aliases' => 

@@ -22,17 +22,57 @@ class PostController extends Controller
         // $post->user_id = 3;
         // $post->votes = 100;
         // $post->save();
-        Post::create([
-            'title' => 'Bài viết mới',
+        // Post::create([
+        //     'title' => 'Bài viết mới',
 
-            'user_id' => 1,
+        //     'user_id' => 1,
 
-            'votes' => 10,
+        //     'votes' => 10,
 
-        ]);
+        // ]);
+        return view('post.create');
+    }
+    function store(Request $request){
+        // echo'hello';
+        $request->validate([
+            'title'=> 'required',
+            'content'=> 'required',
+        ],
+        [
+            //hiện thông báo gì khi gặp lỗi này
+            'required'=> 'trường :attribute không được để trống',
+        ],
+        [
+            //định nghĩa(phiên dịch) các từ cố định
+            'title'=> 'Tiêu đề',
+            'content'=> 'Nội dung',
+        ]
+    );
+        $input= $request->all();
+        if($request->hasFile('file')){
+            // echo 'có file';
+            $file =$request->file;
+            //lấy tên file
+            $fullname =  $file->getClientOriginalName();
+            //lấy đuôi file
+            echo $file->getClientMimeType();
+            //lấy kích thước file
+            echo $file->getsize();
+            // chuyển file lên sever
+            $file->move('public/uploat',$file->getClientOriginalName());
+            $thumbnail = 'public/uploat/'.$fullname;
+            $input['thumbnail']=$thumbnail;
+        }
+        $input['user_id'] = 1;
+        $input['votes'] = 40;
+        Post::create($input);
+        return redirect('post/show')->with('status','Thêm bài viết thành công!');
+        // return redirect()-> route('post.show');
+        // return $request->input();
     }
     function show()
     {
+        // return redirect()->away('https://google.com');
         // $posts = DB::table('posts')->select('title')->get();
         // // foreach($posts as $post){
         // //     echo $post->title;
@@ -70,6 +110,15 @@ class PostController extends Controller
         // ->get();
         // $post = DB::table('posts')->limit(2)->get();
         // return $post;
+        // $posts = Post::all();
+        // kiểu query biullder
+        // $posts= DB::table('posts')->paginate(4);
+        //ORM
+        // $posts = Post::where('id','>',9)->orderBy('id','desc')->simplepaginate(7);
+        $posts = Post::Paginate(5);
+        // $posts->withPath('demo/show');
+        
+        return view('post.index',compact('posts'));
     }
     function updata($id)
     {
