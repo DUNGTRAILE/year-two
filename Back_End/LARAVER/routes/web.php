@@ -8,6 +8,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\AdminPostController;
 use App\Http\Controllers\CookieController;
+use App\Http\Controllers\DemoController;
 use App\Http\Controllers\FeaturedImagesController;
 use App\Http\Controllers\HelperController;
 use App\Http\Controllers\RoleController;
@@ -145,3 +146,10 @@ Route::get('session/flash',[SessionController::class,'add_flash']);
 Route::get('session/delete',[SessionController::class,'delete']);
 Route::get('cookie/set',[CookieController::class,'set']);
 Route::get('cookie/get',[CookieController::class,'get']);
+Route::get('demo/sendmail',[DemoController::class,'sendmail']);
+Route::get('demo/contact',[DemoController::class,'']);
+
+Route::group(['prefix' => 'laravel-filemanager'], function () {
+    \UniSharp\LaravelFilemanager\Lfm::routes();
+});
+

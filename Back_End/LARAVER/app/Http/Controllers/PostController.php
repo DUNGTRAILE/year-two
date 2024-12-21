@@ -63,8 +63,8 @@ class PostController extends Controller
             $thumbnail = 'public/uploat/'.$fullname;
             $input['thumbnail']=$thumbnail;
         }
-        $input['user_id'] = 1;
-        $input['votes'] = 40;
+        $input['user_id'] = 2;
+        $input['votes'] = 600;
         Post::create($input);
         return redirect('post/show')->with('status','Thêm bài viết thành công!');
         // return redirect()-> route('post.show');

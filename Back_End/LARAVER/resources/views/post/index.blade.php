@@ -18,6 +18,7 @@
     <li>
         <a href="">{{$post->title}}</a> <br>
         <!-- <img src="{{url("$post->thumbnail")}}" alt=""> -->
+        <p>{!!$post->content!!}</p>
         <p>{{$post->votes}}</p>
     </li>
     @endforeach
