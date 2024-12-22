@@ -1,39 +1,43 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\Product;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
     //
-    function show($id){
-       $produc = DB::table('product')
-       ->where('id',$id)
-       ->get();
-       return $produc;
+    function show(){
+        $products= Product::all();
+    //    $produc = DB::table('product')
+    //    ->where('id',$id)
+    //    ->get();
+    //    return $produc;
+    return view("product.show",compact("products"));
     }
     function add(){
-        return DB::table('products')->insert([
-            'name'=>'Văn Thanh',
-            'content'=>'Ihone 11 pro',
-            'price' => 1000,
-            'user_id' => 3
-        ]);
+        // return DB::table('products')->insert([
+        //     'name'=>'Văn Thanh',
+        //     'content'=>'Ihone 11 pro',
+        //     'price' => 1000,
+        //     'user_id' => 3
+        // ]);
     }
     function update($id){
-        return DB::table('products')
-        ->where('id',$id)
-        ->update([
-            'name'=>'dấy tên',
-            'content'=>'Ihone 17 pro',
-            'price' => 20009,
-            'user_id' => 1
-        ]);
+        // return DB::table('products')
+        // ->where('id',$id)
+        // ->update([
+        //     'name'=>'dấy tên',
+        //     'content'=>'Ihone 17 pro',
+        //     'price' => 20009,
+        //     'user_id' => 1
+        // ]);
     }
     function dalete($id){
-        return DB::table('products')
-        ->whereRaw("id = $id")
-        ->delete();
+        // return DB::table('products')
+        // ->whereRaw("id = $id")
+        // ->delete();
     }
 }

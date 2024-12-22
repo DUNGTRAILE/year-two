@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\AdminPostController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\CookieController;
 use App\Http\Controllers\DemoController;
 use App\Http\Controllers\FeaturedImagesController;
@@ -28,9 +29,12 @@ use App\Http\Controllers\SessionController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/',[ProductController::class,'show']);
+Route::get('cart/show',[CartController::class,'show']);
 // định tuyến cơ bản
 
 // domain.com/post
