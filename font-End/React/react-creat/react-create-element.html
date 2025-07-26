@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+
+</head>
+<body>
+    <script>
+        const h1Dom = document.createElement('h1')
+
+        h1Dom.title = 'hello'
+        h1Dom.className = 'root'
+        h1Dom.innerText = 'hello wordl'
+
+        document.body.appendChild(h1Dom)
+
+        //react
+
+        const h1React = React.createElement('h1',{
+            title:'hello',
+            className:'heading'
+        },'hello wordl')
+
+
+        const ulDom = document.createElement('ul')
+        const li1Dom = document.createElement('li')
+        const li2Dom = document.createElement('li')
+
+        li1Dom.innerText = 'php'
+        li2Dom.innerText = 'c++'
+
+        ulDom.appendChild(li1Dom)
+        ulDom.appendChild(li2Dom)
+        document.body.appendChild(ulDom)
+
+        console.dir(h1Dom)
+        console.log(h1React)
+        
+        const children = [
+            React.createElement('li',null,'php'),
+            React.createElement('li',null,'c++')
+        ]
+
+        const ulReact = React.createElement(
+            'ul',
+            null,
+            ...children
+        )
+
+        console.log(ulReact)
+
+
+
+        const divDom = document.createElement('div')
+        const h2Dom = document.createElement('h2')
+        const pDom = document.createElement('p')
+        h2Dom.title = 'hoc react'
+        h2Dom.innerText = 'hoc react tai nha'
+
+        pDom.innerText = 'hoc tu co ban den nang cao'
+
+        divDom.className = 'post-item'
+
+        divDom.appendChild(h2Dom)
+        divDom.appendChild(pDom)
+
+        document.body.appendChild(divDom)
+        
+        const childrenReact = [
+            React.createElement(
+                'h2',
+                {
+                    title: 'hoc react tai nha'
+                },
+                'hoc react'
+            ),
+            React.createElement(
+                'p',
+                null,
+                'hoc tu co ban den nang cao'
+            )
+        ]
+
+        const divReact = React.createElement(
+            'div',
+            {
+                class: 'post-item'
+            },
+            ...childrenReact
+        )
+
+        console.log(divReact)
+    </script>
+</body>
+</html>

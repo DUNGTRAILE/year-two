@@ -12,5 +12,6 @@
         "stacktrace": "cpp",
         "regex": "cpp",
         "valarray": "cpp"
-    }
+    },
+    "liveServer.settings.CustomBrowser": "chrome"
 }

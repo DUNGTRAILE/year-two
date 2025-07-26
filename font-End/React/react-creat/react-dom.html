@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script>
+        const childrenReact = [
+            React.createElement(
+                'h2',
+                {
+                    title: 'hoc react tai nha'
+                },
+                'hoc react'
+            ),
+            React.createElement(
+                'p',
+                null,
+                'hoc tu co ban den nang cao'
+            )
+        ]
+
+        const divReact = React.createElement(
+            'div',
+            {
+                className: 'post-item'
+            },
+            ...childrenReact
+        )
+        const rootDOM = document.getElementById('root')
+
+        // ReactDOM.render(divReact,root)
+        
+
+
+        const h1g = React.createElement(
+            'h1',
+            {
+                title:'hello',
+                className:'heading'
+            },
+            'hello wordl'
+        )
+
+        const liChildren = [
+            React.createElement(
+                'li',
+                null,
+                'c++'
+            ),
+            React.createElement(
+                'li',
+                null,
+                'php'
+            )
+        ]
+
+        const ulReact = React.createElement(
+            'ul',
+            null,
+            ...liChildren
+        )
+        
+        const group1 = React.createElement(
+            'div',
+            null,
+            divReact,
+            h1g,
+            ulReact
+        )
+            
+        // ReactDOM.render(group1,root)
+            //React 18
+        const root = ReactDOM.createRoot(rootDOM)
+        root.render(group1)
+
+    </script>
+</body>
+
+</html>
